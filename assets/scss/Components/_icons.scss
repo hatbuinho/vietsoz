@@ -1,0 +1,26 @@
+.icon {
+  a {
+    display: block;
+    background-color: deep-get($color, bg, icon);
+    width: 35px;
+    height: 35px;
+    color: deep-get($color, text, icon);
+    line-height: 35px;
+    text-align: center;
+  }
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  &:hover {
+    a {
+      color: deep-get($color, hover, blue);
+    }
+  }
+
+  &--active {
+    a {
+      color: deep-get($color, hover, blue);
+    }
+  }
+}

@@ -1,0 +1,8 @@
+header {
+  background: deep-get($color, bg, header);
+  width: 100%;
+
+  .header-top {
+    padding: 2rem 0 0.25rem;
+  }
+}

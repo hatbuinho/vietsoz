@@ -1,0 +1,131 @@
+//Color
+$color: (
+  bg: (
+    header: #23282d,
+    footer: #2e2f30,
+    ads: #0073aa,
+    topic: #ff2d2d,
+    search: #131619,
+    primary-header: #4db2ec,
+    feature-header: #23282d,
+    icon: #434648,
+    copy-right: #222527,
+
+  ),
+  text: (
+    feature-title: #5f5f5f,
+    feature-header: #eeeeee,
+    primary-header: #fcfcfc,
+    primary-title: #111111,
+    primary-desc: #777777,
+    primary-date: #aaaaaa,
+    topic: #212121,
+    ads: #f0f0f0,
+    footer: #f6f6f6,
+    search-text: #909090,
+    copy-right: #f3f3f3,
+    search-btn: #a2a1a1,
+    time: #aaaaaa,
+    author: #111111,
+    icon: #eeeeee,
+  ),
+  hover: (
+    blue: #4db2ec,
+    red: #ff6b6b,
+  ),
+  border: (
+    primary: #dadada,
+  )
+);
+
+// Headers
+$font-size-base: 1rem !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+// Body
+$base: (
+  "base-font-sans-serif":
+    unquote("Roboto, 'Helvetica Neue', Helvetica, sans-serif"),
+  "base-font-serif":
+    unquote("'Times primary Roman', Times, Baskerville, Georgia, serif"),
+  "secondary-font-serif":
+    unquote("'Playfair Display', Times, Baskerville, Georgia, serif"),
+  "btn-font-sans-serif":
+    unquote("'Hammersmith One', 'Helvetica Neue', Helvetica, sans-serif"),
+  "base-text-color": #fff,
+  "base-background-color": #fff,
+  "base-link-color": #39f,
+  "base-font-size": 12px,
+  "base-line-height": 1.2,
+  "base-font-family": unquote("Arial, 'Helvetica Neue', Helvetica, sans-serif"),
+  "vertical-rhythm": "(map-get($base, base-line-height) * 1em)",
+  "base-min-width": 320px,
+);
+
+// Forms
+$forms: (
+  "form-element-padding": unquote("0.4em 0.7em"),
+  "form-element-border-color": #e5e5e5,
+  "form-element-focus-border-color": #e5e5e5,
+  "placeholder-color": #413d4b,
+);
+
+//Button {
+$button: (
+  "btn-color": #00e0d0,
+  "btn-color-border": #00e0d0,
+  "btn-font-size": 10px,
+  "btn-line-height": 10px,
+  "btn-width": 100px,
+  "btn-radius": 2px,
+);
+
+//Navigation
+$nav: (
+  "color-nav": #eeeeee,
+  "color-active": #4db2ec,
+);
+
+// Breakpoints for include media
+$breakpoints: (
+  "phone": 320px,
+  "tablet": 768px,
+  "desktop": 1024px,
+  "widescreen": 1200px,
+);
+
+// Keywords
+$media-expressions: (
+  "screen": "screen",
+  "print": "print",
+  "handheld": "handheld",
+  "landscape": "(orientation: landscape)",
+  "portrait": "(orientation: portrait)",
+  "retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+  "retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)",
+);
+
+// Grid
+$grid-column: 12;
+$grid-width: 96rem;
+$gutter-horizontal: 1.5rem;
+$gutter-vertical: 8rem;
+$default-font-size: 2rem;
+
+//Font weight
+$font-weight: (
+  thin: 100,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semi-bold: 600,
+  bold: 700,
+  extra-bold: 800,
+  black: 900
+)

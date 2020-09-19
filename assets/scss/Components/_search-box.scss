@@ -1,0 +1,28 @@
+.search-box{
+  position: relative;
+
+  &__input{
+    background-color: deep-get($color, bg, search);
+    height: 2.5rem;
+    padding: .7rem;
+    border: none;
+    color: deep-get($color, text, search-text);
+  }
+
+  &__btn{
+    background-color: deep-get($color, bg, search);
+    margin: 0;
+    padding: .4rem .7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    position: absolute;
+    right: 0;
+    color: deep-get($color,text,search-btn);
+    cursor: pointer;
+
+    i{
+      opacity: .8;
+    }
+  }
+}

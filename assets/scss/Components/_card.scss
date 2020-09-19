@@ -1,0 +1,36 @@
+.card {
+  perspective: 100rem;
+  height: 30rem;
+  position: relative;
+
+  &__side {
+    cursor: pointer;
+    font-size: 2rem;
+    height: 100%;
+    padding: 2.5rem 2.5rem 5rem 2.5rem;
+    border: 1px solid;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-radius: 5rem;
+    backface-visibility: hidden;
+    transition: all .8s;
+
+    &--front {
+      background-color: yellow;
+      // width: 100%;
+      .card:hover & {
+        transform: rotateY(-180deg);
+      }
+    }
+    &--back {
+      background-color: green;
+      transform: rotateY(180deg);
+      // width: 100%;
+      .card:hover & {
+        transform: rotateY(0);
+      }
+    }
+  }
+}

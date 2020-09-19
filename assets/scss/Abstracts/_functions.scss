@@ -1,0 +1,10 @@
+@function weight($font-weight-name) {
+  @return map-get($font-weight, $font-weight-name);
+}
+
+@function deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}

@@ -1,0 +1,36 @@
+/* =================== Utilities ================== */
+
+// @import '../Vendors/bootstrap/utilities';
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-uppercase{
+  text-transform: uppercase !important;
+}
+
+.d-flex{
+  display: flex !important;
+}
+.d-none{
+  display: none !important;
+}
+.d-inline{
+  display: inline !important;
+}
+.d-block{
+  display: block !important;
+}
+.d-inline-block{
+  display: inline-block !important;
+}
+
+.justify-content-between{
+  justify-content: space-between !important;
+}
+
+.mb-2{
+  margin-bottom: 2rem !important;
+}
+

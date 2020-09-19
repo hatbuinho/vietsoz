@@ -1,0 +1,101 @@
+.post {
+  position: relative;
+
+  &__thumb {
+    display: block;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: weight(semi-bold);
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__author {
+    font-size: 0.7rem;
+    color: deep-get($color, text, author);
+    line-height: 2.5rem;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  &__desc {
+    display: block;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    color: deep-get($color, text, primary-desc);
+  }
+
+  &__time {
+    font-size: 0.7rem;
+    color: deep-get($color, text, time);
+  }
+
+  &--feature {
+    .post {
+      &__thumb {
+        width: 360px;
+        height: 240px;
+        margin-bottom: 1rem;
+      }
+
+      &__title {
+        text-transform: uppercase;
+        color: deep-get($color, text, feature-title);
+        max-width: 360px;
+        line-height: inherit;
+      }
+    }
+
+    &:hover .post {
+      &__thumb img {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &--primary {
+    display: flex;
+    height: 175px;
+    overflow: hidden;
+
+    .post {
+      &__thumb {
+        flex: 0 0 265px;
+        height: 180px;
+        margin-right: 2rem;
+      }
+      &__excerpt {
+        padding: 5px 0 15px;
+      }
+      &__title {
+        font-size: 21px;
+        color: deep-get($color, text, primary-title);
+        &:hover{
+        color: deep-get($color, hover, blue);
+
+        }
+      }
+
+      &__desc {
+        margin: 0;
+        &:hover{
+          text-decoration: none;
+          color: deep-get($color, text, primary-desc);
+        }
+      }
+    }
+  }
+}

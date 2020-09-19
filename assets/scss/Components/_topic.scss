@@ -1,0 +1,22 @@
+.topic {
+  margin: 0;
+  padding: 0;
+
+  a {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: deep-get($color, text, topic);
+
+    &:hover {
+      text-decoration: none;
+      color: deep-get($color, hover, red);
+    }
+  }
+  &__name {
+    //
+  }
+  &__quantity {
+    //
+  }
+}
